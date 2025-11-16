@@ -16,7 +16,7 @@ const corsOptions = {
 }
 export const config = {
   databaseURI: process.env.DATABASE_URI,
-  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
+  cloud: '/cloud/main.js',
   appId: process.env.APP_ID,
   masterKey: process.env.MASTER_KEY, //Add your master key here. Keep it secret!
   serverURL: `http://localhost:${process.env.PORT}/parse`, // Don't forget to change to https if needed
